@@ -320,6 +320,11 @@ function initMap(selectLayer) {
         subdomains: ['a', 'b', 'c']
     });
 
+    var ohm = L.tileLayer('http://www.openhistoricalmap.org/ohm_tiles/{z}/{x}/{y}.png', {
+         attribution: osmAttr + ', <a href="http://www.openhistoricalmap.org/">OpenHistoricalMap</a>',
+         subdomains: ['a', 'b', 'c']
+
+
     var mapquest = L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
         attribution: osmAttr + ', <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>',
         subdomains: ['otile1', 'otile2', 'otile3', 'otile4']
